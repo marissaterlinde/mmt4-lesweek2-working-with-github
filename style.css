@@ -1,0 +1,129 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    margin:0;
+    padding:0;
+}
+html,body {
+    margin:0;
+    padding:0;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img { 
+    border:0;
+}
+input{
+    border:1px solid #b0b0b0;
+    padding:3px 5px 4px;
+    color:#979797;
+    width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+    font-style:normal;
+    font-weight:normal;
+}
+ol,ul {
+    list-style:none;
+}
+caption,th {
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border:0;
+}
+
+main{
+max-width: 984;
+
+}
+
+a{
+    color: inherit;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    background: aquamarine;
+    color: crimson;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.4);
+
+}
+
+header ul{
+
+    float: right;
+}
+
+header li{
+
+    float: left;
+    margin-left: 45px;
+    margin-right: 60px;
+    font-size: 1.75em;
+    line-height: 150px;
+}
+
+.thumb-cont{
+max-width: 1000px;
+margin: 165px auto 0 auto;
+background: coral;
+}
+
+.thumb-cont a{
+width: calc(960px/3);
+height: calc(960px/3);
+background: blue;
+float: left;
+margin: 0 5px 10px 5px;
+}
+
+.thumb-cont a:nth-child(2n){
+
+    background: green;
+}
+
+@media screen  and (min-width: 1000px){
+body{
+
+    background:black;
+}
+
+}
+
+@media screen  and (max-width: 1000px){
+    .thumb-cont{
+
+        max-width: 660px;;
+    }
+    
+    
+    }
+
+    @media screen  and (max-width: 660px){
+        .thumb-cont{
+    
+            max-width: 100%;
+        }
+
+        .thumb-cont a{
+
+            width: 100%;
+            margin: 0 0 10px 0;
+
+
+        }
+        
+        
+        } 
